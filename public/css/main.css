@@ -16,3 +16,11 @@ body {
 	font-color: rgb(8,29,63);
 	background-color: rgb(215,223,113);
 }
+
+#name {
+	border-color: rgb(8,29,63); 
+}
+
+#age {
+	border-color: rgb(8,29,63);
+}
