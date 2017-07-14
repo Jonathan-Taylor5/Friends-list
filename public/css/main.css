@@ -1,7 +1,6 @@
 body {
 	font-family: 'Zilla Slab', serif;
 	text-align: center;
-	background-image: url("Background.jpg");
 	background-color: rgb(215,223,113);
 	color: rgb(8,29,63);
 
@@ -31,8 +30,9 @@ body {
 	border: 1px solid rgb(8,29,63);
 	color: rgb(8,29,63);
 	background-color: rgb(215,223,113);
+	text-align: right;
 }
 
 #friends {
-
+	text-align: left;
 }
