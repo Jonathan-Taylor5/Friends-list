@@ -2,7 +2,7 @@ body {
 	font-family: 'Zilla Slab', serif;
 	text-align: center;
 	background-color: rgb(215,223,113);
-	color: rgb(13,95,118);
+	color: rgb(8,29,63);
 }
 
 #input {
@@ -12,17 +12,21 @@ body {
 }
 
 #add-friend {
-	border-color: rgb(8,29,63);
+	border: 1px solid rgb(8,29,63);
 	color: rgb(8,29,63);
 	background-color: rgb(215,223,113);
 }
 
 #name {
-	border-color: rgb(8,29,63); 
-	color: rgb(13,95,118);
+	border: 1px solid rgb(8,29,63); 
 }
 
 #age {
-	border-color: rgb(8,29,63);
-	color: rgb(13,95,118);
+	border: 1px solid rgb(8,29,63);
+}
+
+.remove {
+	border: 1px solid rgb(8,29,63);
+	color: rgb(8,29,63);
+	background-color: rgb(215,223,113);
 }
