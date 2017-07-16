@@ -35,15 +35,20 @@ $(document).ready(function(){
 			name: $name.val(),
 			age: $age.val()
 		};
+
+		var friendTemplate = {"" +
+	"<li>" +
+	"<p><strong>Name:</strong> {{name}}</p>" +
+	"<p><strong>Age:</strong> {{age}}</p>" +
+	"<button id= '{{id}}' class= 'remove'>X</button>" +
+	"</li>"};
+
 		$.ajax({
 			type: 'POST',
 			url: 'http://rest.learncode.academy/api/Jonathan/friends/',
 			data: friend,
 			success: function(newFriend){
-				addFriend(newFriend);
-				$li.fadeIn(450,functiom(){
-					$(this).add();
-				});
+
 			},
 			error: function(){
 				alert('error saving order')
