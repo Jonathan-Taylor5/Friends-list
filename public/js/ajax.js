@@ -41,6 +41,9 @@ $(document).ready(function(){
 			data: friend,
 			success: function(newFriend){
 				addFriend(newFriend);
+				$li.fadeIn(450,functiom(){
+					$(this).add();
+				});
 			},
 			error: function(){
 				alert('error saving order')
@@ -55,7 +58,7 @@ $(document).ready(function(){
 			type: 'DELETE',
 			url: 'http://rest.learncode.academy/api/Jonathan/friends/' + $(this).attr('id'),
 			success: function(){
-				$li.fadeOut(300,function(){
+				$li.fadeOut(450,function(){
 					$(this).remove();
 				});
 			}
