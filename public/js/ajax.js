@@ -35,14 +35,6 @@ $(document).ready(function(){
 			name: $name.val(),
 			age: $age.val()
 		};
-
-		var friendTemplate = {"" +
-	"<li>" +
-	"<p><strong>Name:</strong> {{name}}</p>" +
-	"<p><strong>Age:</strong> {{age}}</p>" +
-	"<button id= '{{id}}' class= 'remove'>X</button>" +
-	"</li>"};
-
 		$.ajax({
 			type: 'POST',
 			url: 'http://rest.learncode.academy/api/Jonathan/friends/',
